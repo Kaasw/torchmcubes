@@ -55,3 +55,5 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${TORCH_CXX_FLAGS}")
 add_subdirectory(cxx)
 
 install(TARGETS ${BUILD_TARGET} LIBRARY DESTINATION .)
+set(CMAKE_CUDA_COMPILER /usr/local/cuda-12.1/bin/nvcc)
+set(CUDA_cuda_driver_LIBRARY /usr/local/nvidia/lib64/libcuda.so.550.90.07)
